@@ -67,10 +67,11 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-          How Setup Imagic (ImageMagick) plugin in WampServer
+          How Generate <a href="https://github.com/SimpleSoftwareIO/simple-qrcode/tree/develop/docs/en"> QR</a> code in Laravel
         </div>
         <br>
-        <img src="data:image/png;base64,{{ base64_encode($im) }}" alt="Red dot" />
+        <img src="data:image/png;base64,{{ base64_encode(SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)->format('png')->merge(public_path('logo.PNG'),.3, true)->generate('Make me into a QrCode!') ) }}">
+       
         <div class="links">
             <a href="#"><strong>- By Shailesh Ladumor</strong></a>
         </div>
