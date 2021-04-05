@@ -81,7 +81,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            How To Implement Browser Push Notification in Laravel
+            How To Implement <a href="https://github.com/anhskohbo/no-captcha" >Google</a> Recaptcha in Laravel
         </div>
 
         <br>

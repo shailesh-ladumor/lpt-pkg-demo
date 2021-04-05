@@ -1,11 +1,71 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "848e21d33c383c07ceb391b7b5762ace",
+    "content-hash": "59bd12506a6d459d0cb47328fa8dd82e",
     "packages": [
+        {
+            "name": "anhskohbo/no-captcha",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anhskohbo/no-captcha.git",
+                "reference": "f654a4093bd2e9ddbdfad3297bb7aa142a55e611"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anhskohbo/no-captcha/zipball/f654a4093bd2e9ddbdfad3297bb7aa142a55e611",
+                "reference": "f654a4093bd2e9ddbdfad3297bb7aa142a55e611",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2|^7.0",
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+                "php": ">=5.5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "NoCaptcha": "Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anhskohbo\\NoCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "anhskohbo",
+                    "email": "anhskohbo@gmail.com"
+                }
+            ],
+            "description": "No CAPTCHA reCAPTCHA For Laravel.",
+            "keywords": [
+                "captcha",
+                "laravel",
+                "laravel4",
+                "laravel5",
+                "laravel6",
+                "no-captcha",
+                "recaptcha"
+            ],
+            "time": "2020-09-10T02:31:52+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
@@ -4138,12 +4198,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -6331,5 +6391,6 @@
     "platform": {
         "php": "^7.3|^8.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

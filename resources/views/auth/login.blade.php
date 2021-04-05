@@ -56,7 +56,8 @@
                         <label class="custom-control-label" for="remember">Remember Me</label>
                     </div>
                 </div>
-
+                {!! NoCaptcha::renderJs() !!}
+                {!! NoCaptcha::display() !!}
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                         Login
