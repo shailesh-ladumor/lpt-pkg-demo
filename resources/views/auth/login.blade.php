@@ -56,7 +56,10 @@
                         <label class="custom-control-label" for="remember">Remember Me</label>
                     </div>
                 </div>
-
+                <div class="form-group mt-3">
+                {!! NoCaptcha::renderJs('es', false, 'onloadCallback') !!}
+                {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                         Login
@@ -66,3 +69,9 @@
         </div>
     </div>
 @endsection
+
+<script>
+    var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
