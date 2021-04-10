@@ -118,6 +118,16 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/enlightn/enlightn" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/enlightn/security-checker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nunomaduro/larastan" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

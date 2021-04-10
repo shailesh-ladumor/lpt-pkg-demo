@@ -81,7 +81,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            How To Implement <a href="https://github.com/anhskohbo/no-captcha" >Google</a> Recaptcha in Laravel
+            How To Implement <a href="https://www.laravel-enlightn.com/" >Laravel Enlightn</a> in Laravel
         </div>
 
         <br>
