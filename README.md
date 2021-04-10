@@ -3,4 +3,4 @@
 
 ## Video Tutorials
 
-[<img src="https://img.youtube.com/vi/v8R0FRkFOmg/0.jpg" width="580">](https://youtu.be/v8R0FRkFOmg)
+[<img src="https://img.youtube.com/vi/S4lWZGS6aL0/0.jpg" width="580">](https://youtu.be/S4lWZGS6aL0)
