@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "3c15306b19c21e2abd7ae3bc2acd76da",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -807,6 +807,53 @@
                 "url"
             ],
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-payumoney",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-payumoney.git",
+                "reference": "b3c9c1a6dfd9949edb155b24d4f488cc484fcb1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-payumoney/zipball/b3c9c1a6dfd9949edb155b24d4f488cc484fcb1e",
+                "reference": "b3c9c1a6dfd9949edb155b24d4f488cc484fcb1e",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "InfyOm\\Payu\\PayuMoneyAppServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\Payu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "Laravel Payumoney Integration Library",
+            "keywords": [
+                "laravel",
+                "payent-gateway",
+                "payment",
+                "payu",
+                "payu-money"
+            ],
+            "time": "2021-04-22T07:00:24+00:00"
         },
         {
             "name": "laravel/framework",

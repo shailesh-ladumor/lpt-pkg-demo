@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.payfrom {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.payfrom .form-grp {
+  display: flex;
+  align-items: center;
+}
+
+.payfrom .logo {
+    display: block;
+    width: 160px;
+    margin: auto;
+    margin-top: -60px;
+}
+
+.payfrom .main-form {
+    width: calc(100% - 100px);
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgb(156 156 156 / 30%);
+}
+
+.payfrom .input-box {
+    height: 45px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    width: calc(100% - 120px);
+    padding-right: 35px;
+}
+
+.payfrom .input-box::placeholder {
+  color: #9e9e9e;
+}
+
+.payfrom .input-box:focus {
+  box-shadow: none;
+}
+
+.payfrom .form-label {
+  width: 120px;
+}
+
+.payfrom .main-form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.payfrom .main-form .form-group textarea {
+  height: 80px;
+}
+
+.continue-pay-btn {
+    background: transparent linear-gradient(270deg,#4facfe,#1ed7fe) 0 0 no-repeat padding-box;
+    border: none;
+    border-radius: 0;
+    padding: 15px
+}
+
+.infyom-logo {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgb(156 156 156 / 30%);
+    position: relative;
+    top: 40px;
+    left: -50px;
+}
+
+.infyom-logo img {
+    width: auto;
+    margin: auto;
+    max-width: 80px;
+}
+
+.icon-group-append {
+    position: absolute;
+    right: 15px;
+    font-size: 15px;
+    color: #9e9e9e;
+    top: 12px;
+}
+
+.required {
+  color: red;
+}
+
+
+@media (max-width: 575px) {
+  .payfrom .main-form {
+    max-width: 350px;
+        width: calc(100% - 90px);
+  }
+
+  .payfrom .logo {
+    width: 120px;
+    margin-top: -30px;
+  }
+
+  .infyom-logo {
+  top: 30px;
+    left: -35px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .infyom-logo img {
+    max-width: 50px;
+  }
+
+  .payfrom .main-form form .form-block {
+        padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .grp-logo {
+    margin-bottom: 0 !important
+  }
+}
+
+
+
+
+
