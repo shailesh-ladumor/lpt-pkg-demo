@@ -39,7 +39,6 @@ return [
             'table' => 'jobs',
             'queue' => 'default',
             'retry_after' => 90,
-            'after_commit' => false,
         ],
 
         'beanstalkd' => [
@@ -48,7 +47,6 @@ return [
             'queue' => 'default',
             'retry_after' => 90,
             'block_for' => 0,
-            'after_commit' => false,
         ],
 
         'sqs' => [
@@ -56,10 +54,9 @@ return [
             'key' => env('AWS_ACCESS_KEY_ID'),
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
             'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
-            'queue' => env('SQS_QUEUE', 'default'),
+            'queue' => env('SQS_QUEUE', 'your-queue-name'),
             'suffix' => env('SQS_SUFFIX'),
             'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
-            'after_commit' => false,
         ],
 
         'redis' => [
@@ -68,7 +65,6 @@ return [
             'queue' => env('REDIS_QUEUE', 'default'),
             'retry_after' => 90,
             'block_for' => null,
-            'after_commit' => false,
         ],
 
     ],

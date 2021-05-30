@@ -1,0 +1,55 @@
+swagger: '2.0'
+info:
+  description: LPT APis
+  version: 1.0.0
+  title: LPT Frontend API's
+basePath: /api/
+tags:
+  - name: Category
+    description: Manage Category
+
+paths:
+  /categories:
+    get:
+      tags:
+        - Category
+      summary: Manage Category
+      description: 'Manage Category with this API'
+      operationId: category
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+    post:
+      tags:
+        - Category
+      summary: Create Category
+      description: 'Create Category with this API'
+      operationId: createCategory
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: name
+          type: string
+          required: true  
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+      security:
+        - api_key: [] 
+
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: Authorization
+    in: header
