@@ -83,25 +83,24 @@
     </style>
 </head>
 <body>
-<div id="root"></div>
+{{-- <div id="root"></div> --}}
 
-{{-- <div class="imgg"></div>
+<div class="imgg"></div>
  <div class="flex-center position-ref full-height">
     <div class="content">
-    
         <div class="title m-b-md">
-            How To Integrate <a style="color: #3c4b64" href="https://github.com/coreui/coreui-free-react-admin-template" >CoreUI 4</a> Theme in
+            How To Read <a style="color: #3c4b64"
+             href="https://github.com/vedmant/laravel-feed-reader">Rss Feed</a> in
               <span style="color: #ff2d20">
                 <strong>Laravel 8</strong>
             </span>
         </div>
-
         <br>
         <div class="links">
             <a href="#"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
         </div>
     </div>
- </div> --}}
+ </div>
 </body>
 <script type="text/javascript" src="{{mix('js/app.js')}}"></script>
 </html>

@@ -11,7 +11,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "ladumor/one-signal": "^0.3.5",
         "laravel/framework": "^8.40",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "vedmant/laravel-feed-reader": "^1.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
