@@ -17,7 +17,7 @@
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
             height: 100vh;
-            margin: 0;   
+            margin: 0;
             overflow: hidden
         }
 
@@ -74,7 +74,7 @@
             font-weight: 200;
             height: 100vh;
             margin: 0;
-            opacity:0.1; 
+            opacity:0.1;
         }
 
         .m-b-md {
@@ -89,10 +89,10 @@
  <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Read <a style="color: #3c4b64"
-             href="https://github.com/vedmant/laravel-feed-reader">Rss Feed</a> in
+            How To Remove <a style="color: #3c4b64"
+             href="{{route('logo')}}">Background</a> From
               <span style="color: #ff2d20">
-                <strong>Laravel 8</strong>
+                <strong>Image</strong>
             </span>
         </div>
         <br>
