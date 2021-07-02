@@ -42,10 +42,12 @@
 
         .content {
             text-align: center;
+            margin-bottom: 30px;
         }
 
         .title {
             font-size: 114px;
+            font-weight: 900;
         }
 
         .links > a {
@@ -60,7 +62,7 @@
         .imgg {
             background-image: url('b.png');
             background-repeat: no-repeat;̥
-        background-position: 50% 0;
+            background-position: 50% 0;
             -ms-background-size: cover;
             -o-background-size: cover;
             -moz-background-size: cover;
@@ -87,7 +89,8 @@
     <div class="content">
         <div class="title m-b-md">
             How To Install
-            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
+{{--            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in--}}
+            <a style="color: #61dafb"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
