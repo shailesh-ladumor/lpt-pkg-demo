@@ -90,7 +90,7 @@
     <div class="content">
         <div class="title m-b-md">
             How To Generate <a style="color: #3c4b64"
-                             href="{{route('logo')}}">UserDevice</a> API Using
+                             href="https://github.com/shailesh-ladumor/one-signal">UserDevice</a> API Using
             <span style="color: #ff2d20">
                 <strong>Laravel One Signal</strong>
             </span>
@@ -102,5 +102,5 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="{{mix('js/app.js')}}"></script>
+{{-- <script type="text/javascript" src="{{mix('js/app.js')}}"></script> --}}
 </html>
