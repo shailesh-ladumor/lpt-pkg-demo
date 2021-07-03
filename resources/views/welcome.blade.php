@@ -83,13 +83,13 @@
     </style>
 </head>
 <body>
-
+<div id="root"></div>
+{{-- 
 <div class="imgg"></div>
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
             How To Install
-{{--            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in--}}
             <a style="color: #61dafb"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
@@ -101,6 +101,7 @@
         </div>
     </div>
 </div>
+ --}}
 </body>
-
+<script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 </html>
