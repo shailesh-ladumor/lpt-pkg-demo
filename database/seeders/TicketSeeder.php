@@ -1,18 +1,17 @@
 <?php
-
 namespace Database\Seeders;
-
+use App\Models\Ticket;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class TicketSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-         $this->call(TicketSeeder::class);
+       Ticket::factory()->count(15)->create();
     }
 }
