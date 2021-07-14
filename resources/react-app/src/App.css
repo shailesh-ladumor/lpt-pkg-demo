@@ -68,7 +68,7 @@ html, body {
 }
 
 .content {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -115,4 +115,7 @@ html, body {
     height: 100vh;
     margin: 0;
     opacity: 0.1;
+}
+li {
+color: black;
 }

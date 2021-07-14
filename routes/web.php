@@ -22,3 +22,4 @@ Auth::routes();
 
 Route::resource('tickets', App\Http\Controllers\TicketController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('api/tickets', [App\Http\Controllers\TicketController::class , 'getTickets']);

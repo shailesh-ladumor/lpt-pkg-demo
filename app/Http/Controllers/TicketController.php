@@ -35,6 +35,13 @@ class TicketController extends AppBaseController
             ->with('tickets', $tickets);
     }
 
+    public function getTickets(Request $request)
+    {
+        $tickets = $this->ticketRepository->all();
+
+        return $this->sendResponse($tickets, 'Tickes retrieved successfully.');
+    }
+    
     /**
      * Show the form for creating a new Ticket.
      *

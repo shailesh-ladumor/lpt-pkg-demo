@@ -1,7 +1,17 @@
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+    const [tickets, setTickets] = useState([]);
+
+    useEffect(()=>{
+        axios.get('api/tickets').then(({data})=>{
+            setTickets(data.data);
+        });
+    },[])
+
     return (
         <div className="App">
             <div className="imgg"/>
@@ -10,16 +20,11 @@ function App() {
             </header>
             <div className="flex-center position-ref full-height">
                 <div className="content">
-                    <div className="title m-b-md">
-                        How To Call
-                        <span className="sub-title">
-                            <strong> Laravel</strong>
-                        </span> API
-                        <span className="App-link">In React</span>
-                    </div>
-                    <div className="links">
-                        <a href="#"><strong className="author">- By Shailesh Ladumor</strong></a>
-                    </div>
+                    <ul class="list-group">
+                        {tickets.map((ticket)=>{
+                            return(<li class="list-group-item">{ticket.subject}</li>)
+                        })}
+                    </ul>
                 </div>
             </div>
         </div>
