@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
+import {fetchTickets} from './store/actions/ticketsAction';
+import {connect} from 'react-redux';
 
-function App() {
-    const [tickets, setTickets] = useState([]);
+function App(props) {
+    const {tickets, fetchTickets} = props;
+    const [isTitle, setIsTitle] = useState(true);
 
     useEffect(()=>{
-        axios.get('api/tickets').then(({data})=>{
-            setTickets(data.data);
-        });
+        fetchTickets();
     },[])
 
     return (
@@ -18,17 +18,37 @@ function App() {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
             </header>
-            <div className="flex-center position-ref full-height">
-                <div className="content">
-                    <ul class="list-group">
-                        {tickets.map((ticket)=>{
-                            return(<li class="list-group-item">{ticket.subject}</li>)
-                        })}
-                    </ul>
+            {isTitle?
+                <div className="flex-center position-ref full-height">
+                    <div className="content">
+                        <div className="title m-b-md">
+                            How To use
+                            <span className="sub-title">
+                            <strong> Redux</strong>
+                        </span> in
+                            <span className="App-link">In React</span>
+                        </div>
+                        <div className="links">
+                            <a href="#"><strong className="author">- By Shailesh Ladumor</strong></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                :
+                <div className="flex-center position-ref full-height">
+                    <div className="content">
+                        <ul className="list-group">
+                            {tickets.map((ticket)=>{
+                                return(<li className="list-group-item">{ticket.subject}</li>)
+                            })}
+                        </ul>
+                    </div>
+                </div>
+            }
         </div>
     );
 }
-
-export default App;
+const mapStateToProps = (state) =>{
+    const {tickets} = state;
+    return {tickets};
+}
+export default connect(mapStateToProps, {fetchTickets})(App);

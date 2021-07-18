@@ -68,7 +68,7 @@ html, body {
 }
 
 .content {
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -94,6 +94,7 @@ html, body {
 .sub-title {
     color: #ff2d20;
     padding-right: 5px;
+    font-size: 180px;
 }
 
 .author {

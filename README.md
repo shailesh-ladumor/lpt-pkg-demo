@@ -1,9 +1,26 @@
-[<img src="https://infyom.com/static/laravel-package-a308bdbea163948d3c82afda149f91ab.png" alt="Laravel Package Tutorial">](https://www.youtube.com/channel/UCuCjzuwBqMqFdh0EU-UwQ-w?sub_confirmation=1)
+# Welcome To Laravel Package Tutorial
+## Step: 1
+`npm install redux react-redux redux-thunk`
 
-## NOTE
-All demo available into the branch. please check branch dropdown for tutorials source code.
+## Step:2
+ Create a Store
 
+## Step:3
+### Configer Index.js
 
-## Video Tutorials
+```
+import thunk from 'redux-thunk';
+import {createStore, applyMiddleware, compose} from 'redux';
+import reducers from './store/reducers';
+import {Provider} from "react-redux";
 
-[<img src="https://img.youtube.com/vi/yMtsgBsqDQs/0.jpg" width="580">](https://www.youtube.com/c/LaravelPackageTutorial)
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
+
+```
+
+```
+  <Provider store={store}>
+    .... App here
+  </Provider>
+```
