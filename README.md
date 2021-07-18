@@ -6,4 +6,4 @@ All demo available into the branch. please check branch dropdown for tutorials s
 
 ## Video Tutorials
 
-[<img src="https://img.youtube.com/vi/yMtsgBsqDQs/0.jpg" width="580">](https://www.youtube.com/c/LaravelPackageTutorial)
+[<img src="https://img.youtube.com/vi/3m2M4WehGwk/0.jpg" width="580">](https://youtu.be/3m2M4WehGwk)
