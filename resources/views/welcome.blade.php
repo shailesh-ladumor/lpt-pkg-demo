@@ -81,6 +81,10 @@
             margin-bottom: 30px;
         }
     </style>
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef"/>
+    <link rel="apple-touch-icon" href="{{ asset('logo.PNG') }}">
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 <body>
 
@@ -88,11 +92,9 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
-{{--            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in--}}
-            <a style="color: #61dafb"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
-            <span style="color: #ff2d20">
-                <strong>Laravel</strong>
+           How to Create
+            <span style="color: #ff2d20; font-size: 150px">
+                <strong>PWA Website?</strong>
             </span>
         </div>
         <br>
@@ -104,3 +106,11 @@
 </body>
 
 </html>
+<script src="{{ asset('/sw.js') }}"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+</script>
