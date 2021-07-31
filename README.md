@@ -6,4 +6,4 @@ All demo available into the branch. please check branch dropdown for tutorials s
 
 ## Video Tutorials
 
-# Comming soon on Monday 2md Aug
+# Comming soon on Monday 2nd Aug
