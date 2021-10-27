@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Models\Category;
+use App\Models\DaimondFeed;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/search', function () {
+    return $category = DaimondFeed::whereBetween('carats', ['0.15','15'])
+        ->whereBetween('price', [0,1000000])
+        ->whereIn('col', ['D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'et'])
+        ->whereIn('clar', ['FL', 'IF', 'VVS1', 'VVS2', 'VS1', 'VS2', 'SI1', 'SI2'])
+        ->paginate(10);
+//    return view('welcome');
+});
+
 
 Auth::routes();
 

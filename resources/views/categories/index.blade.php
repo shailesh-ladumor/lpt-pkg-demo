@@ -24,12 +24,17 @@
         <div class="clearfix"></div>
 
         <div class="card">
+            <div class="card-header">
+                <div class="float-right">
+                    {{ $categories->links() }}
+                </div>
+            </div>
             <div class="card-body p-0">
                 @include('categories.table')
 
                 <div class="card-footer clearfix">
                     <div class="float-right">
-                        
+                        {{ $categories->links() }}
                     </div>
                 </div>
             </div>

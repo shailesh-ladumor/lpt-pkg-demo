@@ -20,14 +20,18 @@ class Category extends Model
     use HasFactory;
 
     public $table = 'categories';
-    
 
     protected $dates = ['deleted_at'];
 
-
-
     public $fillable = [
-        'name'
+        'name',
+        'description',
+        'sub_title',
+        'slug',
+        'created_by',
+        'updated_by',
+        'managed_by',
+        'is_active',
     ];
 
     /**
@@ -48,5 +52,4 @@ class Category extends Model
         'name' => 'required'
     ];
 
-    
 }

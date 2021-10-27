@@ -26,12 +26,6 @@
         <div class="card">
             <div class="card-body p-0">
                 @include('tags.table')
-
-                <div class="card-footer clearfix">
-                    <div class="float-right">
-                        
-                    </div>
-                </div>
             </div>
 
         </div>
