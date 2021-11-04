@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/search', function () {
-    return $category = DaimondFeed::whereBetween('carats', ['0.15','15'])
+    return DaimondFeed::whereBetween('carats', ['0.15','15'])
         ->whereBetween('price', [0,1000000])
         ->whereIn('col', ['D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'et'])
         ->whereIn('clar', ['FL', 'IF', 'VVS1', 'VVS2', 'VS1', 'VS2', 'SI1', 'SI2'])

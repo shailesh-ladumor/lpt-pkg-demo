@@ -59,9 +59,11 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
         .imgg {
             background-image: url('b.png');
-            background-repeat: no-repeat;̥
+            background-repeat: no-repeat;
+            ̥
             background-position: 50% 0;
             -ms-background-size: cover;
             -o-background-size: cover;
@@ -74,11 +76,11 @@
             font-weight: 200;
             height: 100vh;
             margin: 0;
-            opacity:0.1;
+            opacity: 0.1;
         }
 
         .m-b-md {
-            margin-bottom: 30px;
+            margin-bottom: 30px; 
         }
     </style>
 </head>
@@ -88,12 +90,12 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
-{{--            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in--}}
-            <a style="color: #61dafb"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
+            How To Use
+            <a style="color: #61dafb" href="https://laravel.com/docs/8.x/telescope">
             <span style="color: #ff2d20">
-                <strong>Laravel</strong>
+                <strong>Laravel Telescope</strong>
             </span>
+            </a>
         </div>
         <br>
         <div class="links">
