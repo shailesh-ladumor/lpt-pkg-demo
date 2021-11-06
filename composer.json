@@ -4,6 +4,16 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories":[
+        {
+            "type": "path",
+            "url" : "./laravel-pwa"
+        },
+        {
+            "type": "path",
+            "url" : "./laravel-swagger"
+        }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
@@ -15,6 +25,8 @@
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "ladumor/laravel-pwa": "*",
+        "ladumor/laravel-swagger": "*",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
@@ -29,7 +41,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Ladumor\\LaravelPWA\\": "laravel-pwa\/src",
+            "Ladumor\\LaravelSwagger\\": "laravel-swagger\/src"
         }
     },
     "scripts": {
