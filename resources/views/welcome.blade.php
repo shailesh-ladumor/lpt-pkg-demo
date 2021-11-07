@@ -46,7 +46,7 @@
         }
 
         .title {
-            font-size: 114px;
+            font-size: 104px;
             font-weight: 900;
         }
 
@@ -80,6 +80,34 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+        #hideMe {
+            position: absolute;
+            right: 20px;
+            bottom: 110px;
+    -moz-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 15s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 15s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
     </style>
 </head>
 <body>
@@ -89,8 +117,7 @@
     <div class="content">
         <div class="title m-b-md">
             How To Install
-{{--            <a style="color: #3c4b64"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in--}}
-            <a style="color: #61dafb"  href="https://github.com/shailesh-ladumor/one-signal">React JS</a>  in
+            <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
@@ -99,6 +126,15 @@
         <div class="links">
             <a href="#"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
         </div>
+      
+        {{-- <marquee direction="down" width="950" height="300" behavior="alternate" style="border:none">
+            <marquee behavior="alternate">
+                <div class="links" style="margin-top: 50px">
+                    <a href="#"><strong style="font-size: 80px; color:red; font-weight: bold">Subscribe Now</strong></a>
+                </div>
+            </marquee>
+        </marquee> --}}
+        <img style="margin-left:1565px" id="hideMe" src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">
     </div>
 </div>
 </body>
