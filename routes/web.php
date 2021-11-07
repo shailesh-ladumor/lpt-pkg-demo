@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return \App\Models\User::with('audits')->get();
     return view('welcome');
 });
 

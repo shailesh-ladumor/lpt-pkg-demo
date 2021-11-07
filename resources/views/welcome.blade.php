@@ -117,7 +117,7 @@
     <div class="content">
         <div class="title m-b-md">
             How To Install
-            <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in
+            <a style="color: #61dafb"  href="https://github.com/owen-it/laravel-auditing">Auditing</a> in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
