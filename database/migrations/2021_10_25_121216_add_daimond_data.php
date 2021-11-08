@@ -14,7 +14,7 @@ class AddDaimondData extends Migration
     public function up()
     {
         $faker = \Faker\Factory::create();
-        for ($x = 0; $x <= 500000; $x++) {
+        for ($x = 0; $x <= 50; $x++) {
             $input = [
                 'stock_id' => $faker->word,
                 'ReportNo' => $faker->word,

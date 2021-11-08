@@ -15,7 +15,7 @@ class AddCategoryData extends Migration
     public function up()
     {
         $faker = \Faker\Factory::create();
-        for ($x = 0; $x <= 500000; $x++) {
+        for ($x = 0; $x <= 50; $x++) {
             $input = [
                 'name' => ucfirst($faker->word),
                 'description' => $faker->text,
