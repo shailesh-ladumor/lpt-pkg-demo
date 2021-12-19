@@ -116,10 +116,10 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
+            How To Use
             {{-- <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in --}}
             <span style="color: #ff2d20">
-                <strong>Laravel</strong>
+                <strong>Laravel Breeze</strong>
             </span>
         </div>
         <br>
