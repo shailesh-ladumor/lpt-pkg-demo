@@ -116,8 +116,8 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
-            <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in
+            How To Use
+            <a style="color: #61dafb"  href="https://laravel.com/docs/8.x/sanctum">Laravel Sanctum</a> in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
@@ -126,14 +126,6 @@
         <div class="links">
             <a href="#"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
         </div>
-      
-        {{-- <marquee direction="down" width="950" height="300" behavior="alternate" style="border:none">
-            <marquee behavior="alternate">
-                <div class="links" style="margin-top: 50px">
-                    <a href="#"><strong style="font-size: 80px; color:red; font-weight: bold">Subscribe Now</strong></a>
-                </div>
-            </marquee>
-        </marquee> --}}
         <img style="margin-left:1565px" id="hideMe" src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">
     </div>
 </div>
