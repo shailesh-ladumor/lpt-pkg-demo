@@ -9,6 +9,8 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Http\Exports\CategoryViewExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CategoryController extends AppBaseController
 {
@@ -152,5 +154,9 @@ class CategoryController extends AppBaseController
         Flash::success('Category deleted successfully.');
 
         return redirect(route('categories.index'));
+    }
+
+    public function exportCategory(){
+        return Excel::download(new CategoryViewExport, 'categroy.xlsx');
     }
 }

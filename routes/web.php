@@ -37,6 +37,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('users', UserController::class)->middleware('auth');
 
+Route::get('categories/export', [App\Http\Controllers\CategoryController::class, 'exportCategory'])->name('categories.export');
 
 Route::resource('categories', App\Http\Controllers\CategoryController::class);
 
