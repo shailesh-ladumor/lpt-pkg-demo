@@ -83,7 +83,7 @@
         #hideMe {
             position: absolute;
             right: 20px;
-            bottom: 110px;
+            bottom: 53px;
     -moz-animation: cssAnimation 0s ease-in 15s forwards;
     /* Firefox */
     -webkit-animation: cssAnimation 0s ease-in 15s forwards;
@@ -116,17 +116,15 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
-            {{-- <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in --}}
+{{--             <a style="color: #61dafb" href="https://github.com/MohmmedAshraf/blade-flags">Blade Flags</a> in--}}
             <span style="color: #ff2d20">
-                <strong>Laravel</strong>
+                <strong>Laravel Blade Directives - Part 2</strong>
             </span>
         </div>
         <br>
         <div class="links">
-            <a href="#"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
+            <a href="{{route('demo')}}"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
         </div>
-      
         {{-- <marquee direction="down" width="950" height="300" behavior="alternate" style="border:none">
             <marquee behavior="alternate">
                 <div class="links" style="margin-top: 50px">
