@@ -12,18 +12,17 @@
             display: flex;
             justify-content: center;
             flex-flow: column;
-            width: 400px;
+            width: 600px;
             margin: auto;
             padding-top: 200px;
-            font-size: 40px;
+            font-size: 50px;
         }
 
     </style>
 </head>
 <body>
 <div class="flex-center">
-    <div> * Production Directive</div>
-    <div> * Include Directive</div>
+
 </div>
 </body>
 </html>
