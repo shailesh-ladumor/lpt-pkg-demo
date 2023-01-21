@@ -6,23 +6,16 @@
     <title>Laravel Package Tutorial</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="{{asset('app.css')}}" rel="stylesheet">
     <!-- Styles -->
-    <style>
-        .flex-center {
-            display: flex;
-            justify-content: center;
-            flex-flow: column;
-            width: 600px;
-            margin: auto;
-            padding-top: 200px;
-            font-size: 50px;
-        }
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="flex-center">
-
+<div class="imgg"></div>
+<div class="container-md position-ref px-5">
+    <div class="alert alert-success">
+        Hey Developer... Welcome to the demo page.
+    </div>
 </div>
 </body>
 </html>
