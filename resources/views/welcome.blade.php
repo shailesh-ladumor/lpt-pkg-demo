@@ -17,12 +17,12 @@
         <div class="title m-b-md">
 {{--             <a style="color: #61dafb" href="https://github.com/MohmmedAshraf/blade-flags">Blade Flags</a> in--}}
             <span style="color: #ff2d20">
-                <strong>Laravel Blade Directives - Part 2</strong>
+                <strong>Components in Laravel</strong>
             </span>
         </div>
         <br>
         <div class="links">
-            <a href="{{route('demo')}}"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
+            <a href="{{route('home')}}"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
         </div>
         {{-- <marquee direction="down" width="950" height="300" behavior="alternate" style="border:none">
             <marquee behavior="alternate">
