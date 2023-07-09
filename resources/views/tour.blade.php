@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="{{asset('/favicon.ico')}}">
     <style>
         body {
             font: 400 15px/1.8 Lato, sans-serif;
@@ -57,8 +58,8 @@
         }
 
         .bg-1 {
-            background: #d2d2d5;
-            color: #595757;
+            background: #2d2d30;
+            color: #bdbdbd;
         }
 
         .bg-1 h3 {
@@ -190,7 +191,7 @@
         }
     </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body  data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -257,42 +258,59 @@
     </a>
 </div>
 
-<div class="bg-1">
-    <div class="container">
-        <h3 class="text-center">TOUR DATES</h3>
-        <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="{{asset("surt.jpg")}}" alt="Paris" width="400" height="300">
-                    <p><strong>Surat</strong></p>
-                    <p>Saturday 29 November 2002</p>
-                    <button class="btn">Buy Tickets</button>
-                </div>
+<!-- The Band Section -->
+<div class="container text-center">
+    <h3>THE BAND</h3>
+    <p><em>We love music!</em></p>
+    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</p>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Name</strong></p><br>
+            <a href="#demo" data-toggle="collapse">
+                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+                <p>Guitarist and Lead Vocalist</p>
+                <p>Loves long walks on the beach</p>
+                <p>Member since 1988</p>
             </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="{{asset("mumbai.jpg")}}" alt="New York" width="400" height="300">
-                    <p><strong>Mumbai</strong></p>
-                    <p>Saturday 29 November 2002</p>
-                    <button class="btn">Buy Tickets</button>
-                </div>
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Name</strong></p><br>
+            <a href="#demo2" data-toggle="collapse">
+                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo2" class="collapse">
+                <p>Drummer</p>
+                <p>Loves drummin'</p>
+                <p>Member since 1988</p>
             </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="{{asset("delhi.jpg")}}" alt="San Francisco" width="400" height="300">
-                    <p><strong>Delhi</strong></p>
-                    <p>Saturday 29 November 2002</p>
-                    <button class="btn">Buy Tickets</button>
-                </div>
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Name</strong></p><br>
+            <a href="#demo3" data-toggle="collapse">
+                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo3" class="collapse">
+                <p>Bass player</p>
+                <p>Loves math</p>
+                <p>Member since 2005</p>
             </div>
         </div>
     </div>
 </div>
+<!--  TOUR Section -->
 
 <!-- Footer -->
 <footer class="text-center">
-    <p>All Rights reserved by Laravel package Tutorial</p>
+    <p>All Rights reserved by Laravel Package Tutorial</p>
 </footer>
 </body>
 </html>

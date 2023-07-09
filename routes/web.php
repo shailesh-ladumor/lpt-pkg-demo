@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', function () {
-    return view('demo', ['name'=> 'Shailesh']);
+    return view('home', ['name'=> 'Shailesh']);
 })->name('home');
 
 Route::get('/contact', function () {
-    return view('test');
+    return view('contact');
 })->name('contact');;
 
 Route::get('/tour', function () {

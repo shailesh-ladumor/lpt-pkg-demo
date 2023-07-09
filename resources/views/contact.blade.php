@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="{{asset('/favicon.ico')}}">
     <style>
         body {
             font: 400 15px/1.8 Lato, sans-serif;
@@ -190,7 +191,7 @@
         }
     </style>
 </head>
-<body  data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -257,59 +258,41 @@
     </a>
 </div>
 
-<!-- The Band Section -->
-<div class="container text-center">
-    <h3>THE BAND</h3>
-    <p><em>We love music!</em></p>
-    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.</p>
-    <br>
+<!--  Contact Section -->
+<div id="contact" class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>We love our fans!</em></p>
+
     <div class="row">
-        <div class="col-sm-4">
-            <p class="text-center"><strong>Name</strong></p><br>
-            <a href="#demo" data-toggle="collapse">
-                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
-            </a>
-            <div id="demo" class="collapse">
-                <p>Guitarist and Lead Vocalist</p>
-                <p>Loves long walks on the beach</p>
-                <p>Member since 1988</p>
-            </div>
+        <div class="col-md-4">
+            <p>Fan? Drop a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Delhi</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 7878787777</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
         </div>
-        <div class="col-sm-4">
-            <p class="text-center"><strong>Name</strong></p><br>
-            <a href="#demo2" data-toggle="collapse">
-                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
-            </a>
-            <div id="demo2" class="collapse">
-                <p>Drummer</p>
-                <p>Loves drummin'</p>
-                <p>Member since 1988</p>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <p class="text-center"><strong>Name</strong></p><br>
-            <a href="#demo3" data-toggle="collapse">
-                <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255" height="255">
-            </a>
-            <div id="demo3" class="collapse">
-                <p>Bass player</p>
-                <p>Loves math</p>
-                <p>Member since 2005</p>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit">Send</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!--  TOUR Section -->
 
 <!-- Footer -->
 <footer class="text-center">
-    <p>All Rights reserved by Laravel package Tutorial</p>
+    <p>All Rights reserved by Laravel Package Tutorial</p>
 </footer>
 </body>
 </html>
