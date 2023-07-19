@@ -1,8 +1,7 @@
-@extends('app')
-@section('title')
-    Contact
-@endsection
-@section('content')
+<x-layout>
+    <x-slot name="title">
+        Contact
+    </x-slot>
     <div id="contact" class="container">
         <h3 class="text-center">Contact</h3>
         <p class="text-center"><em>We love our fans!</em></p>
@@ -33,4 +32,6 @@
             </div>
         </div>
     </div>
-@endsection
+</x-layout>
+
+

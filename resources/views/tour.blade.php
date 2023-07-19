@@ -1,9 +1,7 @@
-@extends('app')
-@section('title')
-    Tour
-@endsection
-@section('content')
-    <!-- The Band Section -->
+<x-layout>
+    <x-slot name="title">
+        Tour
+    </x-slot>
     <div class="container text-center">
         <h3>THE BAND</h3>
         <p><em>We love music!</em></p>
@@ -47,15 +45,14 @@
                 <p class="text-center"><strong>Name</strong></p><br>
                 <a href="#demo3" data-toggle="collapse">
                     <img src="{{asset('bandmember.jpg')}}" class="img-circle person" alt="Random Name" width="255"
-                     height="255">
-            </a>
-            <div id="demo3" class="collapse">
-                <p>Bass player</p>
-                <p>Loves math</p>
-                <p>Member since 2005</p>
+                         height="255">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Bass player</p>
+                    <p>Loves math</p>
+                    <p>Member since 2005</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!--  TOUR Section -->
-@endsection
+</x-layout>
