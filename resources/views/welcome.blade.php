@@ -8,16 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <!-- Styles -->
     <link href="{{asset('app.css')}}" rel="stylesheet">
+    @notifyCss
 </head>
 <body>
-
+<x-notify::notify />
 <div class="imgg"></div>
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-{{--             <a style="color: #61dafb" href="https://github.com/MohmmedAshraf/blade-flags">Blade Flags</a> in--}}
+            <a target="_blank" style="color: #61dafb" href="https://github.com/mckenziearts/laravel-notify">Notify</a> in
             <span style="color: #ff2d20">
-                <strong>Laravel Blade Directives - Part 2</strong>
+                <strong>Laravel</strong>
             </span>
         </div>
         <br>
@@ -31,9 +32,11 @@
                 </div>
             </marquee>
         </marquee> --}}
-        <img style="margin-left:1565px" id="hideMe" src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">
+        <img style="margin-left:1565px" id="hideMe"
+             src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">
     </div>
 </div>
+@notifyJs
 </body>
 
 </html>

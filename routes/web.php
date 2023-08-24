@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    emotify('error', 'You are awesome, your data was successfully created');
     return view('welcome');
 });
 Route::get('/demo', function () {
