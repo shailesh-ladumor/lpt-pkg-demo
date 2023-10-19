@@ -15,7 +15,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <a target="_blank" style="color: #61dafb" href="#">Package name</a> in
+            <a target="_blank" style="color: #61dafb" href="https://github.com/laravel/ui">Authentication</a> in
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
