@@ -98,3 +98,122 @@ background-position: 50% 0;
         visibility:hidden;
     }
 }
+
+.share-model__dialog {
+    max-width: 420px;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+.share-model__dialog-body {
+    height: 490px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.share-model__btn-close {
+    align-self: end;
+    cursor: pointer;
+}
+
+.share-model__share-box {
+    width: 72px;
+    padding-top: 15px;
+    height: 72px;
+    flex-shrink: 0;
+    background: #EEEDF2;
+    border-radius: 50%;
+    padding-left: 12px;
+}
+
+.share-model__title {
+    color: #1E0A3B;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 55px;
+    padding-top: 13px;
+}
+
+.share-model__twitter {
+    margin-top: 10px;
+    width: 220px;
+    height: 52px;
+    background: black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.share-model__twitter-text {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.share-model__twitter-text:focus,
+.share-model__twitter-text:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.share-model__twitter-text span {
+    font-weight: 700;
+}
+
+.share-model__facebook {
+    margin-top: 20px;
+    width: 220px;
+    height: 52px;
+    border-radius: 8px;
+    background: #3C5A9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.share-model__facebook-text {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.share-model__facebook-text:focus,
+.share-model__facebook-text:hover {
+    background: #3C5A9A;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.share-model__facebook-text span {
+    font-weight: 700;
+}
+
+.share-model__copy {
+    margin-top: 20px;
+    width: 220px;
+    height: 52px;
+    border-radius: 8px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.share-model__copy-text {
+    color: #4D4D4D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
