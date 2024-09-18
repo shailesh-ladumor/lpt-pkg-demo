@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in!') }} {{ Auth::user()->lastSuccessfulLoginAt() }}
                 </div>
             </div>
         </div>

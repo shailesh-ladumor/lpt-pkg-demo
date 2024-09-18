@@ -17,8 +17,10 @@
 <div class="imgg"></div>
 <div class="flex-center position-ref full-height">
     <div class="content">
-        <div class="title m-b-md" id="btn">
-            <a style="color: #61dafb" href="#">Share Page in Social Media</a> in
+        <div class="title m-b-md">
+            <a style="color: #61dafb"
+               target="_blank"
+               href="https://github.com/rappasoft/laravel-authentication-log">Auth Log</a> in
             <span style="color: #ff2d20">
                 <strong>Laravel?</strong>
             </span>
